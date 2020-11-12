@@ -1,0 +1,1 @@
+package configurations;import audits.Revision;import org.hibernate.envers.RevisionListener;public class CustomRevisionListener implements RevisionListener {    @Override    public void newRevision(Object o) {        final Revision revision = (Revision) o;    }}
